@@ -1,343 +1,287 @@
-/* 5f556b */
-body
-{
-  margin: 0;
-  padding: 0;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  min-height: 100vh;
-  font-family: 'Orbit', sans-serif;
-  overflow: hidden;
-  position: relative;
-  background: linear-gradient(to bottom, #0b0b2b, #2b1b35 70%,
-    #090a0f);
+:root {
+    --text-color: #ffffff;
+    --link-color: #cccbfe;
+    --background-color: #000000;
 }
 
-/* animation */
-@keyframes fadeIn 
-{
-  0% 
-  {
-    opacity: 0;
-    transform: translateY(20px); 
-  }
-  100% 
-  {
-    opacity: 1;
-    transform: translateY(0);
-  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
 }
 
-@keyframes fadeInStatic 
-{
-  0% 
-  {
-    opacity: 0;
-  }
-  100% 
-  {
-    opacity: 1;
-  }
+html {
+    scroll-behavior: smooth;
 }
 
-.social-links,
-.email-vertical 
-{
-  opacity: 0;
-  animation: fadeInStatic 1s ease-out forwards;
+body {
+    font-family: 'Orbit', sans-serif;
+    background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-.container,
-.box-1,
-.box-2,
-.skill 
-{
-  opacity: 0;
-  animation: fadeIn 1s ease-out forwards;
+a {
+    color: var(--link-color);
+    text-decoration: none;
 }
 
-/* for content on page */
-.container
-{
-  display: flex;
-  flex-direction: column; 
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+    /* background-color: #ff0000; */
 }
 
-/* for boxes to be beside eachother */
-.container-box
-{
-  display: flex;
-  margin-bottom: 20px;
+nav .left a {
+    color: var(--text-color);
+    font-size: 22px;
 }
 
-.container-tag
-{
-  display: flex;
-  margin-bottom: 10px;
-  margin-left: 20px;
+nav .right a {
+    color: var(--text-color);
+    margin: 0 10px;
 }
 
-.box-1 
-{
-  animation-delay: 0.2s;
-  height: 320px;
-  width: 320px;
-  backdrop-filter: blur(8px);
-  border-radius: 10px;
-  margin-right: 30px; 
-  font-family: 'Orbit', sans-serif;
-  color: white;
-  font-size: 10px;
-  box-shadow: 0 4px 10px #5f556b; 
+.description-section {
+    padding: 0 20px; 
 }
 
-/* so texts are kinda centered */
-.box-1 h1, .box-1 p
-{
-  margin: 10px;
+.description-section .text h2{
+    font-size: 30px;
 }
 
-.box-2 
-{
-  animation-delay: 0.2s;
-  height: 320px;
-  width: 320px;
-  /* background-color: rgba(95, 85, 107, 0.10); */
-  /* border: 2px solid rgba(255,255,255, .2); */
-  backdrop-filter: blur(8px);
-  border-radius: 10px;
-  box-shadow: 0 4px 10px #5f556b; 
+/*
+nav .right a:last-child{
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+*/
 
-  font-family: 'Orbit', sans-serif;
-  color: white;
-  font-size: 10px;
+/* SECTION 1 - DESCRIPTION */
+.description-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    gap: 40px;
+    margin-bottom: 100px;
 }
 
-.box-repo
-{
-  height: 100px;
-  width: 210px;
-  background-color: #fce7ff11;
-  border-radius: 10px;
-  margin-right: 20px; 
-  font-family: 'Orbit', sans-serif;
-  color: white;
-  font-size: 9px;
-  box-shadow: 0 4px 8px #69556b; 
-  backdrop-filter: blur(5px);
-  animation: fadeIn 1s ease-out forwards;
+.description-section .text {
+    flex: 5;
 }
 
-.box-repo h2, .box-repo p
-{
-  margin: 10px;
+.description-section .text h2 {
+    font-size: 40px;
 }
 
-/* tags for repos */
-.topic
-{
-  height: 20px;
-  width: 50px;
-  background-color: rgba(163, 133, 182, 0.29);
-  border-radius: 10px;
-  margin-left: 5px;
-  font-family: 'Orbit', sans-serif;
-  color: white;
-  font-size: 9px; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.description-section .text .links  {
+  margin-top: 25px;
 }
 
-.skill 
-{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 5px;
-  margin-left: 10px;
-  margin-top: 10px;
+.description-section .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
 }
 
-.skill p 
-{
-  font-family: 'Orbit', sans-serif;
-  font-size: 10px;
-  color: white;
+.description-section .text .links a:hover {
+    color: red;
+    border: 2px solid red;
 }
 
-.dots 
-{
-  display: flex;
-  gap: 6px;
+.description-section .text {
+    flex: 5;
+}
+.description-section .photo {
+    flex: 2;
+    display: flex;
+    justify-content: right;
 }
 
-.dot 
-{
-  width: 5px;
-  height: 5px;
-  border: 1px solid white;
+.description-section .photo img {
+  width: 350px;
   border-radius: 50%;
-  display: inline-block;
 }
 
-.filled 
-{
-  background-color: white;
+
+/* SECTION 2: SKILLS */
+.skills-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
 }
 
-.social-links 
-{
-  animation-delay: 0.4s;
-  position: fixed;
-  left: 30px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  z-index: 1000;
+.skills-section h2 {
+    text-align: center;
+    font-size: 40px;
 }
 
-.social-links img 
-{
-  width: 40px;
-  height: 40px;
-  opacity: 0.8;
-  transition: 0.3s;
+.skills-section p {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.social-links img:hover 
-{
-  opacity: 1;
-  transform: scale(1.1);
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.email-vertical 
-{
-  animation-delay: 0.4s;
-  position: fixed;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%) rotate(0deg);
-  transform-origin: right center;
-  writing-mode: vertical-rl;
-  font-family: 'Orbit', sans-serif;
-  font-size: 20px;
-  z-index: 1000;
+.skills-section .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 10px;
 }
 
-.email-vertical a 
-{
-  color: white;
-  text-decoration: none;
-  opacity: 0.8;
-  transition: 0.3s;
+.skills-section .cells .cell img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
 }
 
-.email-vertical a:hover 
-{
-  opacity: 1;
-  transform: scale(2.1);
+/* SECTION 5 - CONTACT */
+.contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
 }
 
-/* stars bg animation from https://codepen.io/nefejames/pen/PwYMqoE */
-.stars 
-{
-  width: 1px;
-  height: 1px;
-  position: absolute;
-  background: white;
-  box-shadow: 2vw 5vh 2px white, 10vw 8vh 2px white, 15vw 15vh 1px white,
-    22vw 22vh 1px white, 28vw 12vh 2px white, 32vw 32vh 1px white,
-    38vw 18vh 2px white, 42vw 35vh 1px white, 48vw 25vh 2px white,
-    53vw 42vh 1px white, 58vw 15vh 2px white, 63vw 38vh 1px white,
-    68vw 28vh 2px white, 73vw 45vh 1px white, 78vw 32vh 2px white,
-    83vw 48vh 1px white, 88vw 20vh 2px white, 93vw 52vh 1px white,
-    98vw 35vh 2px white, 5vw 60vh 1px white, 12vw 65vh 2px white,
-    18vw 72vh 1px white, 25vw 78vh 2px white, 30vw 85vh 1px white,
-    35vw 68vh 2px white, 40vw 82vh 1px white, 45vw 92vh 2px white,
-    50vw 75vh 1px white, 55vw 88vh 2px white, 60vw 95vh 1px white,
-    65vw 72vh 2px white, 70vw 85vh 1px white, 75vw 78vh 2px white,
-    80vw 92vh 1px white, 85vw 82vh 2px white, 90vw 88vh 1px white,
-    95vw 75vh 2px white;
-  animation: twinkle 8s infinite linear;
+.contact-section h2 {
+    font-size: 40px;
 }
 
-.shooting-star 
-{
-  position: absolute;
-  width: 100px;
-  height: 2px;
-  background: linear-gradient(90deg, white, transparent);
-  animation: shoot 3s infinite ease-in;
+.contact-section .group {
+    display: flex;
+    gap: 50px;   
 }
 
-.shooting-star:nth-child(1) 
-{
-  top: 20%;
-  left: -100px;
-  animation-delay: 0s;
+.contact-section .group .text {
+    flex: 3;
+    margin-top: 20px;
 }
 
-.shooting-star:nth-child(2) 
-{
-  top: 35%;
-  left: -100px;
-  animation-delay: 1s;
+.contact-section .group form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;    
 }
 
-.shooting-star:nth-child(3) 
-{
-  top: 50%;
-  left: -100px;
-  animation-delay: 2s;
+.contact-section .group form input,
+.contact-section .group form textarea {
+    font-family: 'Orbit', sans-serif; 
+    border: 2px solid blue;
+    background-color: aquamarine;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
 }
 
-@keyframes twinkle 
-{
-  0%,
-  100% {
-    opacity: 0.8;
-  }
-  50% {
-    opacity: 0.4;
-  }
+.contact-section .group form button {
+    font-size: 16px;
+    font-family: 'Orbit', sans-serif; 
+    background-color: aqua;
+    border: none;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s;
 }
 
-@keyframes shoot 
-{
-  0% 
-  {
-    transform: translateX(0) translateY(0) rotate(25deg);
-    opacity: 1;
-  }
-  100% 
-  {
-    transform: translateX(120vw) translateY(50vh) rotate(25deg);
-    opacity: 0;
-  }
+.contact-section .group form button:hover {
+    filter: brightness(.9);
 }
 
-/* Additional twinkling stars with different animation timing */
-.stars::after 
-{
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  background: white;
-  box-shadow: 8vw 12vh 2px white, 16vw 18vh 1px white, 24vw 25vh 2px white,
-    33vw 15vh 1px white, 41vw 28vh 2px white, 49vw 35vh 1px white,
-    57vw 22vh 2px white, 65vw 42vh 1px white, 73vw 28vh 2px white,
-    81vw 48vh 1px white, 89vw 32vh 2px white, 97vw 45vh 1px white,
-    3vw 68vh 2px white, 11vw 75vh 1px white, 19vw 82vh 2px white,
-    27vw 88vh 1px white, 35vw 72vh 2px white, 43vw 85vh 1px white,
-    51vw 92vh 2px white, 59vw 78vh 1px white;
-  animation: twinkle 6s infinite linear reverse;
+@media (max-width: 850px) {
+    /* SECTION 1 */
+    .description-section .text h2 {
+        font-size: 35px;
+    } 
 }
+
+@media (max-width: 740px) {
+    /* SECTION 1 */
+    .description-section {
+        flex-direction: column-reverse;
+    } 
+    
+    .description-section .photo img{
+        width: 300px;
+    } 
+    
+    /* SECTION 2: SKILLS */
+    .contact-section .group {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    /* NAVBAR */
+    nax {
+        padding: 0 20px;
+    }
+    
+      nav .right a {
+        font-size: 20px;   
+    }
+    
+    
+    nav .right a span {
+        display: none;    
+    }
+    
+    /* SECTION 2: SKILLS */
+    .skills-section {
+        padding: 0 20px;
+    }
+
+    .skills-section .cells .cell span {
+        font-size: 60px;
+    }   
+    
+    /* SECTION 2: SKILLS */
+    .experience-section {
+        padding: 0 20px;
+    }
+    
+    /* SECTION 2: SKILLS */
+    .contact-section {
+        padding: 0 20px;
+    }
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+span {
+    color: white;
+}
+label{
+    color: white;
+}
+
 
 
 

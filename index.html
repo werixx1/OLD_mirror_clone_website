@@ -1,201 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-	
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>learning stage hi!</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
-  
-  <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
-</head>
-	
-<body>
-  <div class="stars"> </div>
-  <div class="shooting-star"></div>
-  <div class="shooting-star"></div>
-  <div class="shooting-star"></div>
-  <div class="shooting-star"></div>
-  <div class="shooting-star"></div>
-
-  <div class="social-links">
-  <a href="https://github.com/werixx1" target="_blank">
-    <img src="icons/github-icon.svg" alt="GitHub" />
-  </a>
-  <!-- will add my linkedin later hehe -->
-  <a href="https://en.wikipedia.org/wiki/Monkey" target="_blank"> 
-    <img src="icons/linkedin-icon.svg" alt="LinkedIn" />
-  </a>
-  <!-- will add my profesional twitter if i ever make one -->
-  <a href="https://en.wikipedia.org/wiki/Monkey" target="_blank">
-    <img src="icons/x-icon.svg" alt="X" />
-  </a>
-  </div>
-  
-  <div class="email-vertical">
-  <p> <a href="mailto:werixx1@gmail.com" target="_blank">werixx1@gmail.com</a> </p>
-  </div>
-  
-  <div class="container">
-  <!-- about me + skills-->
-  <div class="container-box">
-    <div class="box-1">
-    <h1>00. About Me --------</h1>
-    <p>Hi I’m Werix! I am a second-year computer science student specializing 
-      in Algorithms, Programming and Machine Learning.
-    </p>
-    <p> I'm passionate about technology, from machine learning, through web development, 
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content='IE=edge'/>
+        <meta name="viewpoint" content="width=device-width, initial scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        
+        
+        <title>Work in progress</title>
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav>
+            <div class="left">
+                <a href="/">Werix</a>
+            </div>
+            
+            <div class="right">
+                <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+                    <span>Github</span>
+                </a>
+                
+                 <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+                    <span>LinkedIn</span>
+                 </a>
+                
+                 <a href="mailto:example@gmail.com">
+                    <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                    <span>Email</span>
+                 </a>
+                
+            </div>
+        </nav>
+        
+        <main>
+        <!-- SECTION 1 -->
+            <section class="description-section">
+                <div class="text">
+                <h2>Hi I'm Werix!</h2>
+                    <p> I am a second-year computer science student specializing 
+                    in Algorithms, Programming and Machine Learning. I'm passionate about technology, from machine learning, through web development, 
       to hands-on electronics.
       I enjoy building small ML models and working on personal projects that help me practice 
-      and grow my skills.
-    </p>
+      and grow my skills. </p>
+                    <div class="links">
+                        <a href="#skills">
+                            <i class="fa-solid fa-code" style="color: #ffffff;"></i>
+                            <span>Skills</span>
+                        </a>        
+                        <a href="#experience">
+                            <i class="fa-solid fa-check" style="color: #ffffff;"></i>
+                            <span>Experience</span>
+                        </a>
+                        <a href="#contact">
+                            <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                            <span>Contact</span>
+                        </a>
+                    </div>
+                </div>
+            
+                <div class="photo">
+                    <img src="imgs/pfp-photo.webp" alt="headshot">
+                </div>     
+            </section>
+            <!-- SECTION 2 -->
+            <section id="skills" class=skills-section>
+                <h2>Skills</h2>
+                <div class="text">
+                    <p>For plaintext Lorem Ipsum, type lorem then press the Ctrl-Shift-L keyboard shortcut. 
+                        The default keyboard shortcut is the same for all supported platforms.</p>
+                </div>
+            
+                <div class="cells">
+                    <div class="cell">
+                        <i class="fa-brands fa-python" style="color: #ffffff;"></i>
+                        <span>PYTHON</span>
+                    </div>
+            
+                    <div class="cell">
+                        <i class="fa-solid fa-database" style="color: #ffffff;"></i>
+                        <span>SQL</span>
+                    </div>
+            
+                    <div class="cell">
+                        <i class="fa-solid fa-book-open" style="color: #ffffff;"></i>
+                        <span>JUPYTER</span>
+                    </div>
+            
+                    <div class="cell">
+                        <i class="fa-brands fa-java" style="color: #ffffff;"></i>
+                        <span>JAVA</span>
+                    </div>
+                    
+                     <div class="cell">
+                        <i class="fa-solid fa-r" style="color: #ffffff;"></i>
+                        <span>R</span>
+                    </div>
+                    
+             </div>
+        </section>
+             <!-- SECTION 3 -->
+            <section id="experience" class="experience-section">
+                <h2>Experience</h2>
+                <p>lalallalalalaala experience blavlabla [ job experience + interesting repos ]</p>
+            </section>
+             <!-- SECTION 4 -->
+            <section id="projects"></section>
+            <!-- SECTION 5 -->
+            <section id="contact" class="contact-section">
+                <h2>Contact</h2>
+                <div class="group">
+                    <div class="text">
+                        <p>
+                            dumbdummydumbddbdbdb</p>
+                    </div>
+                    
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" id="name">  
+                        <label for="name">Email</label>
+                        <input type="text" id="email">  
+                        <label for="message">Message</label>
+                        <textarea id="message" cols="30" rows="10"></textarea>
+                        <button type="submit">Send message</button>
+                    </form>
+                </div>
+            </section>
+            
+        </main>
     
-    <p>ML technologies I use:
-    </p>
-    <p>&gt; python (NumPy, pandas, scikit-learn)</p>
-    <p>&gt; Matplotlib / Seaborn</p>
-    <p>&gt; Jupyter Notebooks </p>
-    <p>&gt; OpenCV (for computer vision) + Kaggle </p>
-    </div>
+    </body>
     
-    <div class="box-2">
-      
-    <div class="skill">
-    <p>java</p>
-    <div class="dots">
-      <span class="dot filled"></span>
-      <span class="dot filled"></span>
-      <span class="dot filled"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-    </div> 
-      
-    <div class="skill">
-    <p>c#</p>
-    <div class="dots">
-      <span class="dot filled"></span>
-      <span class="dot filled"></span>
-      <span class="dot filled"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-    </div>
-      
-    <div class="skill">
-    <p>c</p>
-    <div class="dots">
-      <span class="dot filled"></span>
-      <span class="dot filled"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-    </div> 
-      
-    <div class="skill">
-    <p>python</p>
-    <div class="dots">
-      <span class="dot filled"></span>
-      <span class="dot filled"></span>
-      <span class="dot filled"></span>
-      <span class="dot filled"></span>
-      <span class="dot"></span>
-    </div>
-    </div>
-  
-    <div class="skill">
-    <p>php</p>
-    <div class="dots">
-      <span class="dot filled"></span>
-      <span class="dot filled"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-    </div>
-     
-    <div class="skill">
-    <p>sql</p>
-    <div class="dots">
-      <span class="dot filled"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-    </div>
-      
-    <div class="skill">
-    <p>html +css</p>
-    <div class="dots">
-      <span class="dot filled"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-    </div>
-      
-    </div> 
-  </div>
-  
-  <!-- repos -->
-  <div class="container-box">
-    
-    <div class="box-repo">
-      <p>01. REPO_NAME1</p> <!-- to make as link or the whole box as a hiperlink? -->
-      <p>test description description description
-      description</p>
-      <div class="container-tag">
-      <div class="topic">
-        <p>tag1</p>
-      </div>
-      <div class="topic">
-        <p>tag2</p>
-      </div>
-      <div class="topic">
-        <p>tag3</p>
-      </div>
-      </div>
-      </div>
-    <div class="box-repo">
-      <p>02. REPO_NAME2</p> <!-- to make as link or the whole box as a hiperlink? -->
-      <p>test description description description
-      description</p>
-      <div class="container-tag">
-      <div class="topic">
-        <p>tag1</p>
-      </div>
-      <div class="topic">
-        <p>tag2</p>
-      </div>
-      <div class="topic">
-        <p>tag3</p>
-      </div>
-      </div>
-      </div>
-    <div class="box-repo">
-      <p>03. REPO_NAME3</p> <!-- to make as link or the whole box as a hiperlink? -->
-      <p>test description description description
-      description</p>
-      <div class="container-tag">
-      <div class="topic">
-        <p>tag1</p>
-      </div>
-      <div class="topic">
-        <p>tag2</p>
-      </div>
-      <div class="topic">
-        <p>tag3</p>
-      </div>
-      </div>
-      </div>
-  </div> 
-
-  </div>
-</body>
-	
 </html>
 
