@@ -12,13 +12,25 @@
 
 html {
     scroll-behavior: smooth;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 body {
     font-family: 'Orbit', sans-serif;
-    background-color: var(--background-color);
+    /* background: url('bin/mesh-gradient.svg'); */
+    background: url('imgs/bg1.webp');
+    background-size: cover;
     max-width: 1400px;
     margin: 0 auto;
+    background-attachment: fixed;
+}
+
+body {
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    border: 2px solid rgba(255,255,255, .2);
+    border-radius: 10px;
 }
 
 a {
@@ -33,7 +45,11 @@ nav {
     align-items: center;
     padding: 0 50px;
     height: 80px;
-    /* background-color: #ff0000; */
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    border: 2px solid rgba(255,255,255, .2);
+    border-radius: 10px;
+    /* background-color: rgba(4, 19, 25, 0.15); */
 }
 
 nav .left a {
@@ -72,6 +88,7 @@ nav .right a:last-child{
     margin: 50px 0;
     gap: 40px;
     margin-bottom: 100px;
+  
 }
 
 .description-section .text {
@@ -79,7 +96,7 @@ nav .right a:last-child{
 }
 
 .description-section .text h2 {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .description-section .text .links  {
@@ -89,7 +106,7 @@ nav .right a:last-child{
 .description-section .text .links a {
     display: inline-block;
     padding: 5px 10px;
-    border: 2px solid var(--link-color);
+    border: 2px solid white;
     border-radius: 5px;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -97,8 +114,8 @@ nav .right a:last-child{
 }
 
 .description-section .text .links a:hover {
-    color: red;
-    border: 2px solid red;
+    color: #000000;
+    border: 2px solid #000000;
 }
 
 .description-section .text {
@@ -157,6 +174,23 @@ nav .right a:last-child{
     border-radius: 2px;
 }
 
+/* SECTION 3: EXPERIENCE */
+.experience-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.experience-section h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.experience-section p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
 /* SECTION 5 - CONTACT */
 .contact-section {
     padding: 0 50px;
@@ -180,29 +214,33 @@ nav .right a:last-child{
 .contact-section .group form {
     flex: 3;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;  
 }
 
 .contact-section .group form input,
 .contact-section .group form textarea {
     font-family: 'Orbit', sans-serif; 
-    border: 2px solid blue;
-    background-color: aquamarine;
+    background-color: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(50px);
+    border: 2px solid rgba(255,255,255, .2);
+    border-radius: 10px;
     padding: 10px;
     margin-bottom: 15px;
     outline: none;
     resize: none;
+    color: white;
 }
 
 .contact-section .group form button {
     font-size: 16px;
     font-family: 'Orbit', sans-serif; 
-    background-color: aqua;
+    background-color: rgba(0, 0, 0, 0.15);
     border: none;
     height: 50px;
     border-radius: 5px;
     cursor: pointer;
     transition: .1s;
+    color: white;
 }
 
 .contact-section .group form button:hover {
@@ -269,17 +307,21 @@ nav .right a:last-child{
 
 h2 {
     color: white;
+    opacity: 0.8;
 }
 
 p {
     color: white;
+    opacity: 0.8;
 }
 
 span {
     color: white;
+    opacity: 0.8;
 }
 label{
     color: white;
+    opacity: 0.8;
 }
 
 
